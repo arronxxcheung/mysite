@@ -1,0 +1,23 @@
+
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+  
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+    <div id="sidebar">
+    <h2><p>Created by ArCheung.</br></h2>
+     Note,Share,Comment fuctions avaliable now.</p>
+  </div>
+
+
+</body>
+</html>
